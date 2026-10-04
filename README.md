@@ -53,8 +53,8 @@ Customer **C** appears in `sales` but is **not** a loyalty member.
 | 8 | Total items and amount spent before membership | `JOIN`, `COUNT()`, `SUM()` |
 | 9 | Points per customer (sushi = 2x) | `CASE WHEN`, `SUM()` |
 | 10 | Points for A and B by end of January (2x on everything in the first week after joining) | `CASE WHEN`, `DATEADD()`, `BETWEEN` |
-| Bonus 1 | Purchase history with membership status | `VIEW`, `LEFT JOIN`, `CASE WHEN` |
-| Bonus 2 | Rank member purchases, `NULL` for non-members | `DENSE_RANK()`, `CASE WHEN` |
+| 11 | Purchase history with membership status | `VIEW`, `LEFT JOIN`, `CASE WHEN` |
+| 12 | Rank member purchases, `NULL` for non-members | `DENSE_RANK()`, `CASE WHEN` |
 
 ### Example: Points by End of January
 
